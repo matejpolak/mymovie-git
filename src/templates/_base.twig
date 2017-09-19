@@ -10,129 +10,137 @@
 </head>
 
 <body>
-{# HEADER PART #}
-    <div class="header">
-        <div class="name">
-        
-        </div>
-        <div class="character_images">
-
-        </div>
-    </div>
-
-{# BASIC PART #}
-
-    <div class="basic">
-
-    {# POSTER #}
-        <div class="poster">
-            <div class="poster_image">
-
-            </div>
+    <div class="body_width">
+    {# HEADER PART #}
+        <div class="header">
             <div class="name">
+                <img src="img/narcos-header.png" alt="narcos sign">
+            </div>
+            <div class="character_image">
+                <img src="img/pablo-hero-trans.png" alt="pablo portrait">
+            </div>
+        </div>
+
+    {# BASIC PART #}
+
+        <div class="basic bg-dark">
+
+        {# POSTER #}
+            <div class="poster">
+                <div class="poster_image">
+                    <img src="img/narcos-poster.jpg" alt="Narcos poster">
+                </div>
+                {# <div class="name text-light">
+                    <h3>NARCOS</h3>
+                </div> #}
+            </div>
+
+        {# ABOUT #}
+            <div class="about text-light ml-1">
+                <div class="name text-uppercase">
+                    <h3>Narcos</h3>
+                    <p class="neg-t-margin"><small>(TV series)</small></p>
+                </div>
+                <div class="genre">
+                    <strong class="text-uppercase">Genre:</strong>
+                    <small class="ml-5">Biography, Crime, Drama, Thriller</small>
+                </div>
+                <div class="directory">
+                    <strong class="text-uppercase">Directory:</strong>
+                    <small class="ml-2">Andrés Baiz, Guillermo Navarro, José Padilha</small>
+                </div>
+                <div class="scenario">
+                    <strong class="text-uppercase">Scenario:</strong>
+                    <small class="ml-3">Carlo Bernard, Doug Miro, Dana Calvo, Andrew Black</small>
+                </div>
+                <div class="releases">
+                    <strong class="text-uppercase">releases:</strong>
+                    <small class="ml-3">CUSA - Aug 28 2015</small>
+                </div>
+            </div>
+
+        {# RATINGS #}
+            <div class="ratings">
+
+                {# IMDB #}
+                <div class="imdb">
+                    <div class="logo">
+                        <img src="img/imdb-logo.png" alt="IMDB logo">
+                    </div>
+                    <div class="progress_bar">
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 89%" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100">89%
+                            </div>
+                        </div>
+                    </div>
+                <div>
+
+                {# MASHED POTATO #}
+                <div class="rotten">
+                    <div class="logo">
+                        <img src="img/rotten-logo.png" alt="IMDB logo">
+                    </div>
+                    <div class="progress_bar">
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 89%" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100">89%
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {# CSFD #}
+                <div class="csfd">
+                    <div class="logo">
+                        <img src="img/csfd-logo.png" alt="IMDB logo">
+                    </div>
+                    <div class="progress_bar">
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 92%" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100">92%
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {# METASCORE #}
+                <div class="metascore">
+                    <div class="logo">
+                        <img src="img/metacritics-logo.png" alt="IMDB logo">
+                    </div>
+                    <div class="progress_bar">
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 77%" aria-valuenow="77" aria-valuemin="0" aria-valuemax="100">77%
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
             </div>
         </div>
 
-    {# ABOUT #}
-        <div class="about">
-            <div class="genre">
+    {# NAVIGATION PART#}
+        <div class="navigation">
+            <div class="series">
+            
+            </div>
+            <div class="actors">
 
             </div>
-            <div class="directors">
+            <div class="reviews">
 
             </div>
-            <div class="actors_list">
+            <div class="gallery">
 
-            </div>
-        </div>
-
-    {# RATINGS #}
-        <div class="ratings">
-
-        {# IMDB #}
-            <div class="imdb">
-                <div class="logo">
-
-                </div>
-                <div class="progress">
-
-                </div>
-                <div class="percentage">
-
-                </div>
-            <div>
-
-        {# MASHED POTATO #}
-            <div class="mashed">
-                <div class="logo">
-
-                </div>
-                <div class="progress">
-
-                </div>
-                <div class="percentage">
-
-                </div>
-            </div>
-
-        {# CSFD #}
-            <div class="csfd">
-                <div class="logo">
-
-                </div>
-                <div class="progress">
-
-                </div>
-                <div class="percentage">
-
-                </div>
-            </div>
-
-        {# METASCORE #}
-            <div class="metascore">
-                <div class="logo">
-
-                </div>
-                <div class="progress">
-
-                </div>
-                <div class="percentage">
-
-                </div>
             </div>
         </div>
+        {% block content %}
+        {% endblock %}
+
+
+
+
+
+
     </div>
-
-{# NAVIGATION PART#}
-    <div class="navigation">
-        <div class="series">
-        
-        </div>
-        <div class="actors">
-
-        </div>
-        <div class="reviews">
-
-        </div>
-        <div class="gallery">
-
-        </div>
-    </div>
-
-
-
-
-
-    {% block content %}
-    {% endblock %}
-
-
-
-
-
-
-
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>

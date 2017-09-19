@@ -1,0 +1,77 @@
+body {
+    background: black url('img/narcos-background.jpg') center center/cover fixed;
+}
+.body_width {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.neg-t-margin {
+    margin-top: - 1em;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;;
+    .name {
+        img {
+            flex-basis: 66%;
+            height: 200px;
+            width: auto;
+        }
+    }
+    .character_image {
+        img {
+            flex-basis: 33%;
+            height: 300px;
+            width: auto;
+        }
+    }
+}
+
+.basic {
+    display: flex;
+    .poster {
+        .poster_image {
+            img {
+                width: 150px;
+            }
+        }
+    }
+    .about {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.genre,
+.directory,
+.scenario,
+.releases {
+    display: flex;
+    align-items: baseline;
+}
+.progress_bar {
+    width: 100px;
+}
+
+.ratings {
+    display: flex;
+    flex-direction: column;
+}
+
+.imdb {
+        display: flex;
+        flex-direction: row;
+    }
+.rotten {
+        display: flex;
+        flex-direction: row;
+    }
+.csfd {
+        display: flex;
+        flex-direction: row;
+    }
+.metascore {
+        display: flex;
+        flex-direction: row;
+    }
