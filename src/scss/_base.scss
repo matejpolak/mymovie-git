@@ -109,5 +109,9 @@ body {
     .awards {
         background: url('img/blood.png') center/cover;
         padding: 50PX;
+        &:hover {
+        background: url('img/blood_hover.png') center/cover;
+        padding: 50PX;  
+        }
     }
 }
