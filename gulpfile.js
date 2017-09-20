@@ -113,7 +113,7 @@ gulp.task('develop', ['build'], function(){
 gulp.task('deploy', ['build'], function(){
     return surge({
         project: 'dist',
-        domain: 'https://javabeans.surge.sh'
+        domain: 'https://narcos.surge.sh'
     })
 });
 
