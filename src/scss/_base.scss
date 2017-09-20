@@ -106,7 +106,7 @@ body {
     .actors,
     .reviews,
     .gallery,
-    .awards {
+    .home {
         background: url('img/blood.png') center/cover;
         padding: 60PX;
         &:hover {
@@ -121,5 +121,8 @@ body {
             text-decoration: none;
             color: white;
         }
+    }
+    .home {
+        order: -1;
     }
 }
