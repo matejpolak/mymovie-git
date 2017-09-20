@@ -30,6 +30,7 @@ body {
 
 .basic {
     display: flex;
+    justify-content: space-between;
     .poster {
         .poster_image {
             img {
@@ -50,28 +51,63 @@ body {
     display: flex;
     align-items: baseline;
 }
+
 .progress_bar {
     width: 100px;
 }
 
 .ratings {
+    width: 40%;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    .imdb {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        .progress_bar {
+            align-self: center;
+        }
+    }
+    .rotten {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        .progress_bar {
+            align-self: center;
+        }
+    }
+    .csfd {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        .progress_bar {
+            align-self: center;
+        }
+    }
+    .metascore {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        .progress_bar {
+            align-self: center;
+        }
+    }
 }
-
-.imdb {
-        display: flex;
-        flex-direction: row;
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    .series,
+    .actors,
+    .reviews,
+    .gallery,
+    .awards {
+        background: url('img/blood.png') center/cover;
+        padding: 50PX;
     }
-.rotten {
-        display: flex;
-        flex-direction: row;
-    }
-.csfd {
-        display: flex;
-        flex-direction: row;
-    }
-.metascore {
-        display: flex;
-        flex-direction: row;
-    }
+}
