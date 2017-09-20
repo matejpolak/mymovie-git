@@ -108,10 +108,18 @@ body {
     .gallery,
     .awards {
         background: url('img/blood.png') center/cover;
-        padding: 50PX;
+        padding: 60PX;
         &:hover {
         background: url('img/blood_hover.png') center/cover;
-        padding: 50PX;  
+        padding: 60PX;  
+        }
+        &:active {
+        background: url('img/blood_hover.png') center/cover;
+        padding: 60PX;
+        }
+        a {
+            text-decoration: none;
+            color: white;
         }
     }
 }

@@ -65,7 +65,7 @@
                 {# IMDB #}
                 <div class="imdb">
                     <div class="logo">
-                        <img src="img/imdb-logo.png" alt="IMDB logo">
+                        <a href="http://www.imdb.com/title/tt2707408/" target="_blank"><img src="img/imdb-logo.png" alt="IMDB logo"></a>
                     </div>
                     <div class="progress_bar">
                         <div class="progress">
@@ -78,7 +78,7 @@
                 {# MASHED POTATO #}
                 <div class="rotten">
                     <div class="logo">
-                        <img src="img/rotten-logo.png" alt="IMDB logo">
+                        <a href="https://www.rottentomatoes.com/tv/narcos" target="_blank"><img src="img/rotten-logo.png" alt="IMDB logo"></a>
                     </div>
                     <div class="progress_bar">
                         <div class="progress">
@@ -91,7 +91,7 @@
                 {# CSFD #}
                 <div class="csfd">
                     <div class="logo">
-                        <img src="img/csfd-logo.png" alt="IMDB logo">
+                        <a ref="https://www.csfd.cz/film/56207-narcos/prehled/" target="_blank"><img src="img/csfd-logo.png" alt="IMDB logo"></a>
                     </div>
                     <div class="progress_bar">
                         <div class="progress">
@@ -104,7 +104,7 @@
                 {# METASCORE #}
                 <div class="metascore">
                     <div class="logo">
-                        <img src="img/metacritics-logo.png" alt="IMDB logo">
+                        <a href="http://www.metacritic.com/tv/narcos" target="_blank"><img src="img/metacritics-logo.png" alt="IMDB logo"></a>
                     </div>
                     <div class="progress_bar">
                         <div class="progress">
@@ -119,24 +119,53 @@
 
     {# NAVIGATION PART#}
         <div class="navigation text-light">
-            <div class="series">
-                <h3 class="text-uppercase">series</h3>
-            </div>
             <div class="actors">
-                <h3 class="text-uppercase">actors</h3>
+                <a href="actors.html">
+                    <h3 class="text-uppercase">actors</h3>
+                </a>
             </div>
             <div class="reviews">
-                <h3 class="text-uppercase">reviews</h3>
+                <a href="reviews.html">
+                    <h3 class="text-uppercase">reviews</h3>
+                </a>
             </div>
             <div class="gallery">
-                <h3 class="text-uppercase">gallery</h3>
+                <a href="gallery.html">
+                    <h3 class="text-uppercase">gallery</h3>
+                </a>
             </div>
             <div class="awards">
-                <h3 class="text-uppercase">awards</h3>
+                <a href="awards.html">
+                    <h3 class="text-uppercase">awards</h3>
+                </a>
             </div>
         </div>
+        
+        <div class="content bg-dark">
         {% block content %}
         {% endblock %}
+        </div>
+
+        {# <div class="footer bg-dark text-uppercase">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">series</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">actors</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">review</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">galerry</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">awards</a>
+                </li>
+            </ul>
+
+        </div> #}
 
 
 
