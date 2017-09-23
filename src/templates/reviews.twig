@@ -1,5 +1,5 @@
 {% extends '_base.twig' %} {% block content %}
-<div class="container">
+{# <div class="container">
     <div class="row">
         <div class="col-8">
             <div class="card bg-dark text-light myshadow mt-3">
@@ -31,8 +31,11 @@
                     <h4 class="card-title">Netflix To The Rescue</h4>
                     <h4><span class="badge badge-primary">170 out of 190 people found this review useful</span></h4>
                     <blockquote class="blockquote mb-0">
-                        <p>As a native Colombian, born and raised in Medellin (in 1975) and victim myself of the Pablo Escobar era, I must say that I am pleasantly surprised with the show!!! I thought it was going to be another bad gringo movie about Colombia with lots of mistakes and not even Colombian landscapes in the background but, I WAS WRONG!!!! Very good actors too, I didn't like Escobar accent since it's not real Paisa accent but it's OK; it will go unnoticed to non- native Colombians ;)<br>
-                            Good Job Netflix!! Sksjdjdjdufirjfjfifrior difjrirjfjfkririfrjrjrkf. That's all I had to say</p>
+                        <p>As a native Colombian, born and raised in Medellin (in 1975) and victim myself of the Pablo Escobar
+                            era, I must say that I am pleasantly surprised with the show!!! I thought it was going to be
+                            another bad gringo movie about Colombia with lots of mistakes and not even Colombian landscapes
+                            in the background but, I WAS WRONG!!!! Very good actors too, I didn't like Escobar accent since
+                            it's not real Paisa accent but it's OK; it will go unnoticed to non- native Colombians ;)<br>                            Good Job Netflix!! Sksjdjdjdufirjfjfifrior difjrirjfjfkririfrjrjrkf. That's all I had to say</p>
                         <footer class="blockquote-footer">katysuarez</footer>
                     </blockquote>
                 </div>
@@ -60,9 +63,98 @@
             </div>
         </div>
     </div>
+</div> #}
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div id="accordion" role="tablist">
+                <div class="card bg-dark text-light myshadow mt-3">
+                    <div class="card-header" role="tab" id="headingOne">
+                        <h5 class="mb-0">
+                            <a class="btn btn-primary" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Review #1
+                            </a>
+                        </h5>
+                    </div>
+
+                    <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            <h4 class="card-title">Netflix To The Rescue</h4>
+                            <h4><span class="badge badge-primary">282 out of 319 people found this review useful</span></h4>
+                            <blockquote class="blockquote mb-0">
+                                <p>Incidentally, I saw an ad for Narco on YouTube, and instead of skipping the ads like I normally do,
+                                    I played this one out because I was genuinely excited for what I was watching. Instantly I jumped
+                                    onto Netflix and I was not disappointed. This is a truly gripping show, one of the best I've
+                                    seen this year. The characters and acting are done well and the storyline moves at a fast enough
+                                    pace to get your adrenalin pumping for the whole episode. My only fear was that it would be too
+                                    generic of a Crime drama, but those feelings were quickly swept away. This is truly an original
+                                    and thoroughly planned out TV show with a whole lot of heart.<br> Maybe the best on Netflix at
+                                    the moment. Narco doesn't disappoint with any aspect of the show. It's exciting and fast paced,
+                                    but above all, it makes you want to keep coming back for more.</p>
+                                <footer class="blockquote-footer">Michael Radny</footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-dark text-light myshadow">
+                    <div class="card-header" role="tab" id="headingTwo">
+                        <h5 class="mb-0">
+                            <a class="collapsed btn btn-primary" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Review #2
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                            <h4 class="card-title">Impressive</h4>
+                            <h4><span class="badge badge-primary">170 out of 190 people found this review useful</span></h4>
+                            <blockquote class="blockquote mb-0">
+                                <p>As a native Colombian, born and raised in Medellin (in 1975) and victim myself of the Pablo Escobar
+                                    era, I must say that I am pleasantly surprised with the show!!! I thought it was going to be
+                                    another bad gringo movie about Colombia with lots of mistakes and not even Colombian landscapes
+                                    in the background but, I WAS WRONG!!!! Very good actors too, I didn't like Escobar accent since
+                                    it's not real Paisa accent but it's OK; it will go unnoticed to non- native Colombians ;)<br>                            Good Job Netflix!! Sksjdjdjdufirjfjfifrior difjrirjfjfkririfrjrjrkf. That's all I had to say</p>
+                                <footer class="blockquote-footer">katysuarez</footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-dark text-light myshadow mb-3">
+                    <div class="card-header" role="tab" id="headingThree">
+                        <h5 class="mb-0">
+                            <a class="collapsed btn btn-primary" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Review #3
+                            </a>
+                        </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-body">
+                            <h4 class="card-title">Addicted</h4>
+                            <h4><span class="badge badge-primary">90 out of 112 people found this review useful</span></h4>
+                            <blockquote class="blockquote mb-0">
+                                <p>Having seen all Padilha movies, I was anxious to see this new Netflix series and had great expectations. He did it again. I cannot stop watching. One episode after another. OK if the cast is not Colombian. But they are all good actors and play the parts very well. I will try to finish this weekend all the episodes but i think there will be more seasons. Best series of the year so far. The action is great. The scenarios are perfect. The 1980's atmosphere is awesome. 10 out 0f 10. I hope they will make more series like that in the future. Good real stories and perfect action and direction. I could not expect less from Padilha.</p>
+                                <footer class="blockquote-footer">Michael Radny</footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+                    <a role="button" href="http://www.imdb.com/title/tt2707408/reviews?ref_=tt_urv" class="btn btn-primary btn-lg btn-block mt-2 mb-3" target="_blank">See the rest of the reviews on IMDB</a>
+            </div>
+
+        </div>
+        {# <div class="col-4 mt-2">
+            <div class="card myshadow text-white bg-primary pb-1">
+                <img class="card-img-top" src="img/arrow.png" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="card-title">And many else...</h4>
+                    <p class="card-text"><small>See a full list on IMDB</small></p>
+                    <a href="http://www.imdb.com/title/tt2707408/fullcredits?ref_=tt_cl_sm#cast" target="_blank" class="btn btn-dark"><small>See them</small></a>
+                </div>
+            </div>
+        </div> #}
+    </div>
 </div>
-
-
 
 
 

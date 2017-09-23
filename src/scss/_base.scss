@@ -52,56 +52,56 @@ body {
     align-items: baseline;
 }
 
-.progress_bar {
-    width: 100px;
-}
+// .progress_bar {
+//     width: 100px;
+// }
 
-.ratings {
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    .imdb {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        .progress_bar {
-            align-self: center;
-        }
-    }
-    .rotten {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        .progress_bar {
-            align-self: center;
-        }
-    }
-    .csfd {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        .progress_bar {
-            align-self: center;
-        }
-    }
-    .metascore {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        .progress_bar {
-            align-self: center;
-        }
-    }
-}
+// .ratings {
+//     width: 40%;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-between;
+//     align-items: center;
+//     .imdb {
+//         width: 100%;
+//         display: flex;
+//         flex-direction: row;
+//         justify-content: space-around;
+//         .progress_bar {
+//             align-self: center;
+//         }
+//     }
+//     .rotten {
+//         width: 100%;
+//         display: flex;
+//         flex-direction: row;
+//         justify-content: space-around;
+//         .progress_bar {
+//             align-self: center;
+//         }
+//     }
+//     .csfd {
+//         width: 100%;
+//         display: flex;
+//         flex-direction: row;
+//         justify-content: space-around;
+//         .progress_bar {
+//             align-self: center;
+//         }
+//     }
+//     .metascore {
+//         width: 100%;
+//         display: flex;
+//         flex-direction: row;
+//         justify-content: space-around;
+//         .progress_bar {
+//             align-self: center;
+//         }
+//     }
+// }
 .navigation {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around; 
     .series,
     .actors,
     .reviews,
@@ -140,4 +140,27 @@ body {
 }
 .border-own {
     border-color: #4D4949;
+}
+.img-thumbnail {
+    background-color: #343a40 !important;
+    border: 1px solid #343a40 !important; 
+}
+.close {
+    color: white !important;
+    text-shadow: 0 1px 0 #000 !important;
+}
+.links.ml-4 a {
+    color: white;
+    &:hover {
+        color:black;
+    }
+}
+.dropdown.navigation {
+    width: 220px;
+    background: url('img/blood.png') center/cover;
+    padding: 50PX;
+    margin: 0 auto;
+}
+.megamargin img {
+    margin-top: 200px;
 }
