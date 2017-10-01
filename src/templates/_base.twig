@@ -99,7 +99,7 @@
                             <div class="col-6">
                                 <div class="progress_bar mt-3">
                                     <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 89%" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100">89%
+                                        <div class="progress-bar bg-primary" role="progressbar" style="width: 89%" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100">89%
                                         </div>
                                     </div>
                                 </div>
@@ -117,7 +117,7 @@
                             <div class="col-6">
                                 <div class="progress_bar mt-3">
                                     <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 89%" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100">89%
+                                        <div class="progress-bar bg-primary" role="progressbar" style="width: 89%" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100">89%
                                         </div>
                                     </div>
                                 </div>
@@ -134,7 +134,7 @@
                             <div class="col-6">
                                 <div class="progress_bar mt-3">
                                     <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 92%" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100">92%
+                                        <div class="progress-bar bg-primary" role="progressbar" style="width: 92%" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100">92%
                                         </div>
                                     </div>
                                 </div>
@@ -151,7 +151,7 @@
                             <div class="col-6">
                                 <div class="progress_bar mt-3">
                                     <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 77%" aria-valuenow="77" aria-valuemin="0" aria-valuemax="100">77%
+                                        <div class="progress-bar bg-primary" role="progressbar" style="width: 77%" aria-valuenow="77" aria-valuemin="0" aria-valuemax="100">77%
                                         </div>
                                     </div>
                                 </div>
@@ -182,17 +182,21 @@
         </div>
 
         {# MOBILE NAVIGATION #}
-        <div class="d-md-none">
-            <div class="dropdown navigation">
-                <a class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <div class="d-md-none mt-3">
+            <nav class="navbar navbar-expand-lg navbar-light text-center text-uppercase font-weight-bold">
+            <a class="navbar-brand" href="#"> </a>
+                <button class="navbar-toggler dropdown navigation border-0" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <h3 class="text-uppercase text-light mt-3 ml-2">MENU <i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i></h3>
-                </a>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">HOME</a>
-                    <a class="dropdown-item" href="#">ACTORS</a>
-                    <a class="dropdown-item" href="#">REVIEW</a>
+                </button>
+                <a class="navbar-brand" href="#"> </a>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav bg-danger">
+                    <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="actors.html">actors</a>
+                    <a class="nav-item nav-link" href="reviews.html">reviews</a>
+                    </div>
                 </div>
-            </div>
+            </nav>
         </div>
 
         <div class="contentback">
@@ -206,13 +210,13 @@
                 <div class="col">
                     <ul class="nav justify-content-center text-uppercase mt-3">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">home</a>
+                            <a class="nav-link active text-primary" href="#">home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">actors</a>
+                            <a class="nav-link text-primary" href="#">actors</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">reviews</a>
+                            <a class="nav-link text-primary" href="#">reviews</a>
                         </li>
                     </ul>
                     <div class="hash d-flex justify-content-around">
